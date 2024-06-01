@@ -1,0 +1,100 @@
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/******************************Hero Component***************************************/
+
+.home-page .hero-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('../../../public/assets/home/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 1440px;
+    height: 629px;
+    padding-inline: 165px;
+}
+
+.home-page .hero-head .left-side {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 346px;
+    max-width: 398px;
+}
+
+.home-page .hero-head .left-side .headline {
+    display: flex;
+    max-width: 200;
+    max-height: 19px;
+    letter-spacing: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(139, 139, 139);
+    text-transform: uppercase;
+}
+
+.home-page .hero-head .left-side .head {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 56.6px;
+    letter-spacing: 2px;
+    font-size: 56px;
+    color: var(--hard-white);
+    max-width: 398px;
+    margin-top: 23px;
+    text-transform: uppercase;
+}
+
+.home-page .hero-head .left-side .description {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.647);
+    margin-top: 24px;
+    max-width: 349px;
+}
+
+.home-page .hero-head .left-side .button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    max-height: 48px;
+    margin-top: 40px;
+}
+
+.home-page .hero-head .left-side .button-div .button-dark-cream {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    color: var(--hard-white);
+    background-color: var(--dark-cream);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15.6px 31.6px;
+    border: 0px;
+}
+
+.home-page .hero-head .left-side .button-div .button-dark-cream:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px -1px 25px 2px rgba(255,255,255,0.58);
+    -moz-box-shadow: inset 1px -1px 25px 2px rgba(255,255,255,0.58);
+    box-shadow: inset 1px -1px 25px 2px rgba(255,255,255,0.58);
+}
+
+/******************************Hero Component***************************************/

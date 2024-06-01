@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../Store/hooks";
 import fetchProducts from "../../Store/Products/Products.async.Actions";
+import earphones from '../../../public/assets/shared/desktop/image-category-thumbnail-earphones.png'
+import headphones from '../../../public/assets/shared/desktop/image-category-thumbnail-headphones.png'
+import speakers from '../../../public/assets/shared/desktop/image-category-thumbnail-speakers.png'
+import './Home.css'
 
 const Home = () => {
     const data = useAppSelector((state) => state.products.data)
@@ -14,18 +18,28 @@ const Home = () => {
     if (status === 'failed') return <div>Error Happened!</div>
 
     return (
-        <div>
-            {status === "loading" && <p>Loading...</p>}
-            {status === "loaded" && (
-                <ul>
-                    {data.map(item => (
-                        <li key={item.id}>
-                            <h2>{item.slug}</h2>
-                            <img src={`http://localhost:3000/Products${item.image.desktop}`} alt={item.slug} />
-                        </li>
-                    ))}
-                </ul>
-            )}
+        <div className="home-page">
+            <div className="hero-head">
+                <div className="left-side">
+                    <h3 className="headline">new product</h3>
+                    <h1 className="head">XX99 Mark II Headphones</h1>
+                    <p className="description">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+                    <div className="button-div">
+                        <button className="button-dark-cream">see product</button>
+                    </div>
+                </div>
+            </div>
+            <div className="triplets">
+                <div className="product">
+                    <img src={headphones} alt="headphones" />
+                </div>
+                <div className="product">
+                    <img src={speakers} alt="headphones" />
+                </div>
+                <div className="product">
+                    <img src={earphones} alt="headphones" />
+                </div>
+            </div>
         </div>
     )
 }
