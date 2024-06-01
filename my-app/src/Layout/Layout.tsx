@@ -1,6 +1,7 @@
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header"
 import MyRouter from "../Router/MyRouter"
+import './Layout.css'
 
 const Layout = () => {
     return (

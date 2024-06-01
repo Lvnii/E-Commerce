@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -17,6 +18,7 @@
     width: 1440px;
     height: 629px;
     padding-inline: 165px;
+    border: none;
 }
 
 .home-page .hero-head .left-side {
@@ -85,7 +87,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 15.6px 31.6px;
-    border: 0px;
+    border: none;
 }
 
 .home-page .hero-head .left-side .button-div .button-dark-cream:hover {
@@ -97,4 +99,96 @@
     box-shadow: inset 1px -1px 25px 2px rgba(255,255,255,0.58);
 }
 
-/******************************Hero Component***************************************/
+/******************************Triplets Component***************************************/
+
+.triplets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1109px;
+    gap: 30px;
+    margin-top: 158px;
+    margin-bottom: 148px;
+}
+
+.triplets .product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 204px;
+}
+
+.triplets .product .product-icon-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 123px;
+    max-height: 160px;
+    margin-bottom: -85px;
+}
+
+.triplets .product .product-icon-div .thumbnail-icon {
+    display: flex;
+    margin-bottom: -30px;
+    z-index: 1;
+}
+
+.triplets .product .product-icon-div .thumbnail-shadow {
+    z-index: 2;
+}
+
+.triplets .inside-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-white);
+    max-width: 350px;
+    max-height: 204px;
+    padding: 73.5px 114.25px 20px 114.25px;
+    border-radius: 8px;
+}
+
+.triplets .inside-product .headline {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.29px;
+    text-align: center;
+    margin-top: 40px   ;
+}
+
+.triplets .inside-product .button-div {
+    display: flex;
+    max-width: 57.32px;
+    max-height: 18px;
+    margin-top: 13px;
+    gap: 8px;
+}
+
+.triplets .inside-product .button-div:hover {
+    cursor: pointer;
+    transform: scale(1.17);
+    transition-duration: 0.3s;
+}
+
+.triplets .inside-product .button-div .triplet-button {
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    max-width: 39px;
+    max-height: 18px;
+    text-transform: uppercase;
+    color: #8b7060;
+    border: none;
+    cursor: pointer;
+}
+
+.triplets .inside-product .button-div .right-svg {
+    max-width: 15px;
+    max-height: 10px;
+    margin-top: 3px;
+}
