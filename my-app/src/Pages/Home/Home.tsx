@@ -8,6 +8,7 @@ import rightArrow from '../../../public/assets/shared/desktop/icon-arrow-right.s
 import thumbShadow from '../../../public/assets/shared/desktop/thumbnail-shadow.png'
 import zx9Thumb from '../../../public/assets/shared/desktop/zx9-speaker.png'
 import circleSpeaker from '../../../public/assets/home/desktop/pattern-circles.svg'
+import yx1Thumb from '../../../public/assets/home/desktop/yx1-thumbnail.png'
 import './Home.css'
 
 const Home = () => {
@@ -103,6 +104,20 @@ const Home = () => {
             <div className="zx7-thumbnail">
                 <div className="left-side">
                     <p className="headline">zx7 speaker</p>
+                    <div className="button-div">
+                        <button className="button-transparent-black">see product</button>
+                    </div>
+                </div>
+            </div>
+
+            {/***************     YX1 EARPHONES    *****************/}
+
+            <div className="yx1-thumbnail">
+                <div className="image-div">
+                    <img src={yx1Thumb} alt="image-yx1" />
+                </div>
+                <div className="right-side">
+                    <h1 className="headline">YX1 EARPHONES</h1>
                     <div className="button-div">
                         <button className="button-transparent-black">see product</button>
                     </div>

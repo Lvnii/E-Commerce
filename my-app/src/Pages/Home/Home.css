@@ -105,8 +105,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1109px;
-    gap: 30px;
+    max-width: 1110px;
+    gap: 40px;
     margin-top: 158px;
     margin-bottom: 148px;
 }
@@ -216,7 +216,7 @@
 
 .home-page .zx9-thumbnail .zx9-image {
     position: absolute;
-    bottom: -1155px;
+    bottom: -1066px;
     left: 280px;
     z-index: 2;
 }
@@ -229,7 +229,7 @@
 
 .home-page .zx9-thumbnail .circles {
     position: absolute;
-    bottom: -1490px;
+    bottom: -1400px;
     left: 20px;
     z-index: 1;
     overflow: hidden;
@@ -363,6 +363,77 @@
 }
 
 .home-page .zx7-thumbnail .left-side .button-div .button-transparent-black:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: inset 1px -1px 25px 2px var(--light-cream);
+    -moz-box-shadow: inset 1px -1px 25px 2px var(--light-cream);
+    box-shadow: inset 1px -1px 25px 2px var(--light-cream);
+}
+
+/******************************YX1 EARPHONES***************************************/
+
+.home-page .yx1-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    width: 1109px;
+}
+
+.home-page .yx1-thumbnail .right-side {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #9797971a;
+    max-width: 540px;
+    max-height: 320px;
+    padding-right: 190px;
+    padding-top: 150px;
+    padding-bottom: 160px;
+    padding-left: 100px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.home-page .yx1-thumbnail .right-side .headline {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    max-width: 265px;
+    max-height: 38px;
+}
+
+.home-page .yx1-thumbnail .right-side .button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    max-height: 48px;
+    margin-top: 35px;
+}
+
+.home-page .yx1-thumbnail .right-side .button-div .button-transparent-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    color: var(--dark-black);
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15.6px 31.6px;
+    z-index: 3;
+}
+
+.home-page .yx1-thumbnail .right-side .button-div .button-transparent-black:hover {
     transform: scale(1.2);
     transition-duration: 0.3s;
     border-radius: 10px;
