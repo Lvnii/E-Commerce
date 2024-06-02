@@ -6,6 +6,8 @@ import headphones from '../../../public/assets/shared/desktop/headphone-thumbnai
 import speakers from '../../../public/assets/shared/desktop/speaker-thumbnail.png'
 import rightArrow from '../../../public/assets/shared/desktop/icon-arrow-right.svg'
 import thumbShadow from '../../../public/assets/shared/desktop/thumbnail-shadow.png'
+import zx9Thumb from '../../../public/assets/shared/desktop/zx9-speaker.png'
+import circleSpeaker from '../../../public/assets/home/desktop/pattern-circles.svg'
 import './Home.css'
 
 const Home = () => {
@@ -22,6 +24,7 @@ const Home = () => {
     return (
         <div className="home-page">
             {/***************     hero    *****************/}
+
             <div className="hero-head">
                 <div className="left-side">
                     <h3 className="headline">new product</h3>
@@ -32,7 +35,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
             {/***************     triplets    *****************/}
+
             <div className="triplets">
                 <div className="product">
                     <div className="product-icon-div">
@@ -73,6 +78,28 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/***************     ZX9 SPEAKER    *****************/}
+
+            <div className="zx9-thumbnail">
+                <div className="left-side">
+                    <img className="zx9-image" src={zx9Thumb} alt="zx9-img" />
+                    <img className="circles" src={circleSpeaker} alt="circles" />
+                </div>
+                <div className="right-side">
+                    <h1 className="headline">zx9 speaker</h1>
+                    <p className="text">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                    <div className="button-div">
+                        <button className="button-dark-black">see product</button>
+                    </div>
+                </div>
+            </div>
+
+            {/***************     ZX7 SPEAKER    *****************/}
+
+            <div className="zx7-thumbnail">
+
             </div>
         </div>
     )
