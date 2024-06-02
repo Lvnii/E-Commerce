@@ -216,16 +216,24 @@
 
 .home-page .zx9-thumbnail .zx9-image {
     position: absolute;
-    bottom: -1066px;
+    bottom: -1155px;
     left: 280px;
     z-index: 2;
 }
 
+.home-page .zx9-thumbnail .circles-div {
+    display: flex;
+    width: 944px;
+    height: 944px;
+}
+
 .home-page .zx9-thumbnail .circles {
     position: absolute;
-    bottom: -1410px;
+    bottom: -1490px;
     left: 20px;
     z-index: 1;
+    overflow: hidden;
+
 }
 
 .home-page .zx9-thumbnail .right-side {
@@ -298,3 +306,68 @@
 }
 
 /******************************ZX7 thumbnail***************************************/
+
+.home-page .zx7-thumbnail {
+    display: flex;
+    width: 1109px;
+    height: 320px;
+    background-image: url('../../../public/assets/home/desktop/zx7-home.png');
+    background-position: center;
+    margin-top: 48px;
+    border-radius: 8px;
+}
+
+.home-page .zx7-thumbnail .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 90px;
+    text-align: left;
+}
+
+.home-page .zx7-thumbnail .left-side .headline {
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 222px;
+    max-height: 38px;
+}
+
+.home-page .zx7-thumbnail .left-side .button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    max-height: 48px;
+    margin-top: 35px;
+}
+
+.home-page .zx7-thumbnail .left-side .button-div .button-transparent-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    color: var(--dark-black);
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15.6px 31.6px;
+    z-index: 3;
+}
+
+.home-page .zx7-thumbnail .left-side .button-div .button-transparent-black:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: inset 1px -1px 25px 2px var(--light-cream);
+    -moz-box-shadow: inset 1px -1px 25px 2px var(--light-cream);
+    box-shadow: inset 1px -1px 25px 2px var(--light-cream);
+}

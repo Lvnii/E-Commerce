@@ -85,7 +85,9 @@ const Home = () => {
             <div className="zx9-thumbnail">
                 <div className="left-side">
                     <img className="zx9-image" src={zx9Thumb} alt="zx9-img" />
-                    <img className="circles" src={circleSpeaker} alt="circles" />
+                    <div className="cincles-div">
+                        <img className="circles" src={circleSpeaker} alt="circles" />
+                    </div>
                 </div>
                 <div className="right-side">
                     <h1 className="headline">zx9 speaker</h1>
@@ -99,7 +101,12 @@ const Home = () => {
             {/***************     ZX7 SPEAKER    *****************/}
 
             <div className="zx7-thumbnail">
-
+                <div className="left-side">
+                    <p className="headline">zx7 speaker</p>
+                    <div className="button-div">
+                        <button className="button-transparent-black">see product</button>
+                    </div>
+                </div>
             </div>
         </div>
     )
