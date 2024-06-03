@@ -3,12 +3,11 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    max-width: 1422px;
     max-height: 97px;
     background-color: #0e0e0ef4;
     color: var(--hard-white);
     padding-inline: 330px;
-    padding: 34.5px 330px 34.5px 330px;
+    padding: 34.5px 800px 34.5px 719px;
 }
 
 .header .header-border {

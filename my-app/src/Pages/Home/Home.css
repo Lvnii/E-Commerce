@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: auto;
 }
 
 /******************************Hero Component***************************************/
@@ -14,9 +15,11 @@
     background-image: url('../../../public/assets/home/desktop/image-hero.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
-    width: 1422px;
+    /* background-color: #0e0e0ef4; */
+    width: auto;
     height: 629px;
-    padding-inline: 165px;
+    padding-right: 900px;
+    padding-left: 165px;
     border: none;
 }
 
@@ -198,42 +201,37 @@
 .home-page .zx9-thumbnail {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 560px;
-    width: 1110px;
-    padding: 50px 70px 40px 0px;
+    justify-content: space-between;
+    max-height: 560px;
+    max-width: 1110px;
+    padding: 50px 70px 40px 100px;
     background-color: var(--dark-cream);
     overflow: hidden;
     border-radius: 8px;
 }
 
-.home-page .zx9-thumbnail .left-size {
+.home-page .zx9-thumbnail .left-side {
     display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
     position: relative;
-    max-height: 493px;
-    overflow: hidden;
+    max-height: 100%;
+    max-width: 50%;
 }
 
-.home-page .zx9-thumbnail .zx9-image {
+.home-page .zx9-thumbnail .left-side .zx9-image {
     position: absolute;
-    bottom: -1066px;
-    left: 280px;
+    bottom: 195px;
+    left: 10px;
     z-index: 2;
 }
 
-.home-page .zx9-thumbnail .circles-div {
-    display: flex;
-    width: 944px;
-    height: 944px;
-}
-
-.home-page .zx9-thumbnail .circles {
-    position: absolute;
-    bottom: -1400px;
-    left: 20px;
+.home-page .zx9-thumbnail  .left-side .circles {
+    /* position: absolute;
+    bottom: 0px;
+    left: 20px; */
     z-index: 1;
-    overflow: hidden;
-
 }
 
 .home-page .zx9-thumbnail .right-side {

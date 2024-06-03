@@ -85,10 +85,10 @@ const Home = () => {
 
             <div className="zx9-thumbnail">
                 <div className="left-side">
-                    <img className="zx9-image" src={zx9Thumb} alt="zx9-img" />
-                    <div className="cincles-div">
-                        <img className="circles" src={circleSpeaker} alt="circles" />
+                    <div>
+                        <img className="zx9-image" src={zx9Thumb} alt="zx9-img" />
                     </div>
+                    <img className="circles" src={circleSpeaker} alt="circles" />
                 </div>
                 <div className="right-side">
                     <h1 className="headline">zx9 speaker</h1>
