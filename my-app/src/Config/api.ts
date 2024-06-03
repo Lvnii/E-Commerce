@@ -11,7 +11,6 @@ const api = axios.create({
 api.interceptors.request.use(async (req) => {
     req.headers["Content-Type"] = 'application/json'
     req.headers["Accept"] = 'application/json'
-    // req.headers["Authorization"] = 'Bearer token'
     return req;
 })
 
