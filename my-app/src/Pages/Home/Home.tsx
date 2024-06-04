@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../Store/hooks";
 import fetchProducts from "../../Store/Products/Products.async.Actions";
 import earphones from '../../../public/assets/shared/desktop/earphone-thumbnail.png'
@@ -32,7 +33,7 @@ const Home = () => {
                     <h1 className="head">XX99 Mark II Headphones</h1>
                     <p className="description">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
                     <div className="button-div">
-                        <button className="button-dark-cream">see product</button>
+                        <NavLink to={'/'} className="button-dark-cream">see product</NavLink>
                     </div>
                 </div>
             </div>
@@ -48,7 +49,7 @@ const Home = () => {
                     <div className="inside-product">
                         <h4 className="headline">headphones</h4>
                         <div className="button-div">
-                            <button className="triplet-button">shop</button>
+                            <NavLink to={'/'} className="triplet-button">shop</NavLink>
                             <img className="right-svg" src={rightArrow} alt="arrow" />
                         </div>
                     </div>
@@ -61,7 +62,7 @@ const Home = () => {
                     <div className="inside-product">
                         <h4 className="headline">speakers</h4>
                         <div className="button-div">
-                            <button className="triplet-button">shop</button>
+                            <NavLink to={'/'} className="triplet-button">shop</NavLink>
                             <img className="right-svg" src={rightArrow} alt="arrow" />
                         </div>
                     </div>
@@ -74,7 +75,7 @@ const Home = () => {
                     <div className="inside-product">
                         <h4 className="headline">earphones</h4>
                         <div className="button-div">
-                            <button className="triplet-button">shop</button>
+                            <NavLink to={'/'} className="triplet-button">shop</NavLink>
                             <img className="right-svg" src={rightArrow} alt="arrow" />
                         </div>
                     </div>
@@ -94,7 +95,7 @@ const Home = () => {
                     <h1 className="headline">zx9 speaker</h1>
                     <p className="text">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
                     <div className="button-div">
-                        <button className="button-dark-black">see product</button>
+                        <NavLink to={'/'} className="button-dark-black">see product</NavLink>
                     </div>
                 </div>
             </div>
@@ -105,7 +106,7 @@ const Home = () => {
                 <div className="left-side">
                     <p className="headline">zx7 speaker</p>
                     <div className="button-div">
-                        <button className="button-transparent-black">see product</button>
+                        <NavLink to={'/'} className="button-transparent-black">see product</NavLink>
                     </div>
                 </div>
             </div>
@@ -119,7 +120,7 @@ const Home = () => {
                 <div className="right-side">
                     <h1 className="headline">YX1 EARPHONES</h1>
                     <div className="button-div">
-                        <button className="button-transparent-black">see product</button>
+                        <NavLink to={'/'} className="button-transparent-black">see product</NavLink>
                     </div>
                 </div>
             </div>
