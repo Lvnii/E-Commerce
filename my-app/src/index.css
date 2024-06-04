@@ -19,13 +19,12 @@
 
 body {
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .container {
   width: 90%;
-  max-width: 1110px;
+  width: 1110px;
   margin: auto;
 }
 
