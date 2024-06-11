@@ -6,7 +6,9 @@ const Header = () => {
     return (
         <div className="header">
             <div className="container">
-                <img className="headline" src="../../../public/assets/home/desktop/audiophile.png" alt="" />
+                <NavLink to={'/'} className={'header-navlink'}>
+                    <img className="headline" src="../../../public/assets/home/desktop/audiophile.png" alt="" />
+                </NavLink>
                 <nav className="nav-bar">
                     <li>
                         <NavLink className='nav-a' to={'/'}>Home</NavLink>
@@ -22,7 +24,9 @@ const Header = () => {
                     </li>
                 </nav>
                 <div className="header-cart-icon">
-                    <img className="cart-icon" src={cartImg} alt="cart-icon" />
+                    <NavLink className='nav-cart' to={'/cart'}>
+                        <img className="cart-icon" src={cartImg} alt="cart-icon" />
+                    </NavLink>
                 </div>
             </div>
         </div>

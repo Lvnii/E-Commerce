@@ -2,11 +2,12 @@
   line-height: 1.5;
   font-weight: 400;
   --dark-cream: #D87D4A;
-  --light-black: #101010;
   --dark-white: #F1F1F1;
   --md-white: #FAFAFA;
   --hard-white: #fff;
   --light-cream: #fbaf85;
+  --light-black: #101010;
+  --medium-black: #4c4c4c;
   --dark-black: #000000;
 }
 
@@ -18,7 +19,6 @@
 }
 
 body {
-  /* display: flex; */
   height: 100vh;
 }
 
