@@ -1,0 +1,41 @@
+.footer .container .suggestion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+.footer .container .suggestion .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    max-width: 455px;
+}
+
+.footer .container .suggestion .left-side .headline {
+    max-width: 455px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footer .container .suggestion .left-side .headline span {
+    color: var(--dark-cream);
+}
+
+.footer .container .suggestion .left-side .text {
+    margin-top: 32px;
+    font-size: 15px;
+    font-weight: medium;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.585);
+    max-width: 445px;
+}
+
+.footer .container .suggestion .right-side img {
+    border-radius: 8px;
+}

@@ -139,7 +139,7 @@ const Home = () => {
                     <div className="right-side">
                         <h1 className="headline">YX1 EARPHONES</h1>
                         <div className="button-div">
-                            <NavLink to={'/'} className="button-transparent-black">see product</NavLink>
+                            <NavLink to={'/'} className="button-transparent">see product</NavLink>
                         </div>
                     </div>
                 </div>
