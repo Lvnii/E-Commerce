@@ -123,7 +123,7 @@ const Home = () => {
                     <div className="left-side">
                         <p className="headline">zx7 speaker</p>
                         <div className="button-div">
-                            <NavLink to={'/'} className="button-transparent-black">see product</NavLink>
+                            <NavLink to={'/'} className="button-transparent">see product</NavLink>
                         </div>
                     </div>
                 </div>

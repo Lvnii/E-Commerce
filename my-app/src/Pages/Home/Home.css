@@ -25,7 +25,7 @@
     letter-spacing: 10px;
     text-transform: uppercase;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.329);
+    color: rgba(255, 255, 255, 0.462);
 }
 
 .home-page .hero-background .container .hero-head .left-side .head {
@@ -424,5 +424,65 @@
 
 .home-page .container .zx9-thumbnail .right-side .button-div:hover {
     background-color: var(--medium-black);
+    transition-duration: 0.2s;
+}
+
+/************************zx7 speaker******************************/
+
+.home-page .container .zx7-thumbnail {
+    margin-top: 48px;
+    background-image: url(../../../public/assets/home/desktop/image-speaker-zx7.jpg);
+    background-position: center;
+    max-height: 320px;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    padding-left: 100px;
+    border-radius: 8px;
+}
+
+.home-page .container .zx7-thumbnail .left-side .headline {
+    max-width: 205px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.home-page .container .zx7-thumbnail .left-side .button-div {
+    margin-top: 32px;
+    max-width: 160px;
+    max-height: 48px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding-inline: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid black;
+}
+
+.home-page .container .zx7-thumbnail .left-side .button-div:hover {
+    background-color: var(--dark-black);
+    transition-duration: 0.2s;
+}   
+
+.home-page .container .zx7-thumbnail .left-side .button-div .button-transparent {
+    border: 1px dotted red;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.home-page .container .zx7-thumbnail .left-side .button-div .button-transparent:hover {
+    background-color: var(--hard-black);
+    color: white;
     transition-duration: 0.2s;
 }
