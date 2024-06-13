@@ -1,6 +1,10 @@
 import './Footer.css'
 import { NavLink } from 'react-router-dom'
 import footerHero from '../../../public/assets/shared/desktop/image-best-gear.jpg'
+import audiophile from '../../../public/assets/home/desktop/audiophile.png'
+import facebook from '../../../public/assets/shared/desktop/icon-facebook.svg'
+import instagram from '../../../public/assets/shared/desktop/icon-instagram.svg'
+import twitter from '../../../public/assets/shared/desktop/icon-twitter.svg'
 
 const Footer = () => {
 
@@ -14,6 +18,45 @@ const Footer = () => {
                     </div>
                     <div className="right-side">
                         <img src={footerHero} alt="footerheroimg" />
+                    </div>
+                </div>
+            </div>
+            <div className="wide-footer">
+                <div className="orange-square"></div>
+                <div className="container">
+                    <div className="left-side">
+                        <NavLink to={'/'} className={'footer-navlink'}>
+                            <img className="headline" src="../../../public/assets/home/desktop/audiophile.png" alt="" />
+                        </NavLink>
+                        <p className='text'>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>                    
+                        <p className='copyright'>Copyright 2021. All Rights Reserved</p>
+                    </div>
+                    <div className="right-side">
+                        <nav className="nav-bar">
+                            <li>
+                                <NavLink className='nav-a' to={'/'}>Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className='nav-a' to={'/headphones'}>headphones</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className='nav-a' to={'/speakers'}>speakers</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className='nav-a' to={'/earphones'}>earphones</NavLink>
+                            </li>
+                        </nav>
+                        <div className="icons">
+                            <NavLink className={'icon'} to={'/'}>
+                                <img src={facebook} alt="facebook" />
+                            </NavLink>
+                            <NavLink className={'icon'} to={'/'}>
+                                <img src={twitter} alt="twitter" />
+                            </NavLink>
+                            <NavLink className={'icon'} to={'/'}>
+                                <img src={instagram} alt="instagram" />
+                            </NavLink>
+                        </div>
                     </div>
                 </div>
             </div>

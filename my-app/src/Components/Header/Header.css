@@ -28,7 +28,7 @@
 
 .header .container .nav-bar .nav-a {
     color: var(--hard-white);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 13px;
     letter-spacing: 2px;
     line-height: 25px;
@@ -42,7 +42,7 @@
 }
 
 .header .container .header-cart-icon {
-    margin-left: 90px;
+    margin-left: 77px;
 }
 
 .header .container .header-cart-icon:hover {
