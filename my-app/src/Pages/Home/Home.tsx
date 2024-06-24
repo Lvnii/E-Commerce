@@ -10,8 +10,8 @@ import thumbShadow from '../../../public/assets/shared/desktop/thumbnail-shadow.
 import zx9Thumb from '../../../public/assets/shared/desktop/zx9-speaker.png'
 import circleSpeaker from '../../../public/assets/home/desktop/pattern-circles.svg'
 import yx1Thumb from '../../../public/assets/home/desktop/yx1-thumbnail.png'
-import heroImg from '../../../public/assets/home/desktop/naushniki-hero.png'
 import './Home.css'
+import Hero from "./Components/hero/hero";
 
 const Home = () => {
     const data = useAppSelector((state) => state.products.data)
@@ -29,23 +29,7 @@ const Home = () => {
             
         {/***************     hero    *****************/}
             
-            <div className="hero-background">
-                <div className="container">
-                    <div className="hero-head">
-                        <div className="left-side">
-                            <h3 className="headline">new product</h3>
-                            <h1 className="head">XX99 Mark II Headphones</h1>
-                            <p className="description">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-                            <div className="button-div">
-                                <NavLink to={'/'} className="button-dark-cream">see product</NavLink>
-                            </div>
-                        </div>
-                        <div className="right-side">
-                            <img className="hero-image" src={heroImg} alt="heroImg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <Hero />
 
         {/***************     triplets    *****************/}
             

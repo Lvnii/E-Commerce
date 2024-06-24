@@ -1,0 +1,79 @@
+.home-page .hero-background {
+    background-color: #000000ed;
+}
+
+.home-page .hero-background .container .hero-head {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+.home-page .hero-background .container .hero-head .left-side {
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+    text-align: left;
+    gap: 24px;
+}
+
+.home-page .hero-background .container .hero-head .left-side .headline {
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.462);
+}
+
+.home-page .hero-background .container .hero-head .left-side .head {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.home-page .hero-background .container .hero-head .left-side .description {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: medium;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.618);
+    max-width: 349px;
+}
+
+.home-page .hero-background .container .hero-head .left-side .button-div {
+    margin-top: 32px;
+    max-width: 160px;
+    max-height: 48px;
+    background-color: var(--dark-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.home-page .hero-background .container .hero-head .left-side .button-div:hover {
+    background-color: var(--light-cream);
+    transition-duration: 0.2s;
+}
+
+.home-page .hero-background .container .hero-head .left-side .button-div .button-dark-cream {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.home-page .hero-background .container .hero-head .right-side .hero-image {
+    margin-right: -30px;
+}
