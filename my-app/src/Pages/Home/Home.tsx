@@ -60,7 +60,7 @@ const Home = () => {
                         <div className="inside-product">
                             <h4 className="headline">headphones</h4>
                             <div className="button-div">
-                                <NavLink to={'/'} className="triplet-button">shop</NavLink>
+                                <NavLink to={'/headphones'} className="triplet-button">shop</NavLink>
                                 <img className="right-svg" src={rightArrow} alt="arrow" />
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const Home = () => {
                         <div className="inside-product">
                             <h4 className="headline">speakers</h4>
                             <div className="button-div">
-                                <NavLink to={'/'} className="triplet-button">shop</NavLink>
+                                <NavLink to={'/speakers'} className="triplet-button">shop</NavLink>
                                 <img className="right-svg" src={rightArrow} alt="arrow" />
                             </div>
                         </div>
@@ -86,7 +86,7 @@ const Home = () => {
                         <div className="inside-product">
                             <h4 className="headline">earphones</h4>
                             <div className="button-div">
-                                <NavLink to={'/'} className="triplet-button">
+                                <NavLink to={'/earphones'} className="triplet-button">
                                     <p className="button-text">shop</p>
                                     <img className="right-svg" src={rightArrow} alt="arrow" />    
                                 </NavLink>
