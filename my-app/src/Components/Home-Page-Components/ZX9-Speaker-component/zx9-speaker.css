@@ -1,0 +1,91 @@
+.home-page .container .zx9-thumbnail {
+    align-items: center;
+    display: flex;
+    background-color: var(--dark-cream);
+    margin-top: 144px;
+    height: 560px;
+    max-width: 100%;
+    gap: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.home-page .container .zx9-thumbnail .left-side {
+    max-width: 410px;
+    max-height: 493px;
+    margin-bottom: -102px;
+    margin-left: 115px;
+}
+
+.home-page .container .zx9-thumbnail .left-side .image-div {
+    position: relative;
+}
+
+.home-page .container .zx9-thumbnail .left-side .image-div .zx9-image {
+    z-index: 3;
+    position: relative;
+}
+
+.home-page .container .zx9-thumbnail .left-side .image-div .circles {
+    position: absolute;
+    top: -130px;
+    left: -260px;
+    z-index: 1;
+}
+
+.home-page .container .zx9-thumbnail .right-side {
+    max-width: 349px;
+    max-height: 303px;
+    text-align: left;
+    z-index: 2;
+}
+
+.home-page .container .zx9-thumbnail .right-side .headline {
+    max-width: 261px;
+    max-height: 116px;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.home-page .container .zx9-thumbnail .right-side .text {
+    font-size: 15px;
+    font-weight: medium;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.696);
+}
+
+.home-page .container .zx9-thumbnail .right-side .button-div {
+    margin-top: 32px;
+    max-width: 160px;
+    max-height: 48px;
+    background-color: var(--dark-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.home-page .container .zx9-thumbnail .right-side .button-div .button-dark-black {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.home-page .container .zx9-thumbnail .right-side .button-div:hover {
+    background-color: var(--medium-black);
+    transition-duration: 0.2s;
+}

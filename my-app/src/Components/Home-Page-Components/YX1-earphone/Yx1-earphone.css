@@ -1,0 +1,57 @@
+.home-page .container .yx1-thumbnail {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-page .container .yx1-thumbnail .right-side {
+    max-width: 540px;
+    max-height: 320px;
+    padding: 100px 200px 0px 90px;
+    background-color: #97979724;
+    border-radius: 8px;
+}
+
+.home-page .container .yx1-thumbnail .right-side .headline {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.home-page .container .yx1-thumbnail .right-side .button-div {
+    margin-top: 24px;
+    max-width: 160px;
+    max-height: 48px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.home-page .container .yx1-thumbnail .right-side .button-div:hover {
+    background-color: var(--dark-black);
+    transition-duration: 0.2s;
+}   
+
+.home-page .container .yx1-thumbnail .right-side .button-div .button-transparent {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.home-page .container .yx1-thumbnail .right-side .button-div .button-transparent:hover {
+    background-color: var(--hard-black);
+    color: white;
+    transition-duration: 0.2s;
+}

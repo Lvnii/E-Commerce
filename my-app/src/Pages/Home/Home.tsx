@@ -1,17 +1,12 @@
+import './Home.css'
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../Store/hooks";
 import fetchProducts from "../../Store/Products/Products.async.Actions";
-import earphones from '../../../public/assets/shared/desktop/earphone-thumbnail.png'
-import headphones from '../../../public/assets/shared/desktop/headphone-thumbnail.png'
-import speakers from '../../../public/assets/shared/desktop/speaker-thumbnail.png'
-import rightArrow from '../../../public/assets/shared/desktop/icon-arrow-right.svg'
-import thumbShadow from '../../../public/assets/shared/desktop/thumbnail-shadow.png'
-import zx9Thumb from '../../../public/assets/shared/desktop/zx9-speaker.png'
-import circleSpeaker from '../../../public/assets/home/desktop/pattern-circles.svg'
-import yx1Thumb from '../../../public/assets/home/desktop/yx1-thumbnail.png'
-import './Home.css'
-import Hero from "./Components/hero/hero";
+import Hero from "../../Components/Home-Page-Components/Hero-component/Hero";
+import Triplets from "../../Components/Home-Page-Components/Triplets-component/Triplets";
+import Zx9Speaker from '../../Components/Home-Page-Components/ZX9-Speaker-component/zx9-speaker';
+import Zx7Speaker from '../../Components/Home-Page-Components/ZX7-Speaker-component/ZX7-Speaker';
+import Yx1Earphone from '../../Components/Home-Page-Components/YX1-earphone/Yx1-earphone';
 
 const Home = () => {
     const data = useAppSelector((state) => state.products.data)
@@ -26,108 +21,11 @@ const Home = () => {
 
     return (
         <div className="home-page">
-            
-        {/***************     hero    *****************/}
-            
-        <Hero />
-
-        {/***************     triplets    *****************/}
-            
-            <div className="container">
-
-                <div className="triplets">
-                    <div className="product ">
-                        <div className="product-icon-div">
-                            <img className="thumbnail-icon" src={headphones} alt="headphones" />
-                            <img className="thumbnail-shadow" src={thumbShadow} alt="shadow" />
-                        </div>
-                        <div className="inside-product">
-                            <h4 className="headline">headphones</h4>
-                            <div className="button-div">
-                                <NavLink to={'/headphones'} className="triplet-button">shop</NavLink>
-                                <img className="right-svg" src={rightArrow} alt="arrow" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product1">
-                        <div className="product-icon-div">
-                            <img className="thumbnail-icon" src={speakers} alt="speakers" />
-                            <img className="thumbnail-shadow"  src={thumbShadow} alt="shadow" />
-                        </div>
-                        <div className="inside-product">
-                            <h4 className="headline">speakers</h4>
-                            <div className="button-div">
-                                <NavLink to={'/speakers'} className="triplet-button">shop</NavLink>
-                                <img className="right-svg" src={rightArrow} alt="arrow" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product2">
-                        <div className="product-icon-div">
-                            <img className="thumbnail-icon" src={earphones} alt="earphones" />
-                            <img className="thumbnail-shadow" src={thumbShadow} alt="shadow" />
-                        </div>
-                        <div className="inside-product">
-                            <h4 className="headline">earphones</h4>
-                            <div className="button-div">
-                                <NavLink to={'/earphones'} className="triplet-button">
-                                    <p className="button-text">shop</p>
-                                    <img className="right-svg" src={rightArrow} alt="arrow" />    
-                                </NavLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        {/***************     ZX9 SPEAKER    *****************/}
-
-            <div className="container">
-                <div className="zx9-thumbnail">
-                    <div className="left-side">
-                        <div className="image-div">
-                            <img className="zx9-image" src={zx9Thumb} alt="zx9-img" />
-                            <img className="circles" src={circleSpeaker} alt="circles" />
-                        </div>
-                    </div>
-                    <div className="right-side">
-                        <h1 className="headline">zx9 speaker</h1>
-                        <p className="text">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                        <div className="button-div">
-                            <NavLink to={'/'} className="button-dark-black">see product</NavLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        {/***************     ZX7 SPEAKER    *****************/}
-
-            <div className="container">
-                <div className="zx7-thumbnail">
-                    <div className="left-side">
-                        <p className="headline">zx7 speaker</p>
-                        <div className="button-div">
-                            <NavLink to={'/'} className="button-transparent">see product</NavLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        {/***************     YX1 EARPHONES    *****************/}
-
-            <div className="container">
-                <div className="yx1-thumbnail">
-                    <div className="image-div">
-                        <img src={yx1Thumb} alt="image-yx1" />
-                    </div>
-                    <div className="right-side">
-                        <h1 className="headline">YX1 EARPHONES</h1>
-                        <div className="button-div">
-                            <NavLink to={'/'} className="button-transparent">see product</NavLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Hero />
+            <Triplets />
+            <Zx9Speaker />
+            <Zx7Speaker />
+            <Yx1Earphone />
         </div>
     )
 }

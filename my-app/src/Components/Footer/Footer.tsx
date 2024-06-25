@@ -1,7 +1,6 @@
 import './Footer.css'
 import { NavLink } from 'react-router-dom'
 import footerHero from '../../../public/assets/shared/desktop/image-best-gear.jpg'
-import audiophile from '../../../public/assets/home/desktop/audiophile.png'
 import facebook from '../../../public/assets/shared/desktop/icon-facebook.svg'
 import instagram from '../../../public/assets/shared/desktop/icon-instagram.svg'
 import twitter from '../../../public/assets/shared/desktop/icon-twitter.svg'
@@ -47,13 +46,13 @@ const Footer = () => {
                             </li>
                         </nav>
                         <div className="icons">
-                            <NavLink className={'icon'} to={'/'}>
+                            <NavLink className={'icon'} to={'https://www.facebook.com/'}>
                                 <img src={facebook} alt="facebook" />
                             </NavLink>
-                            <NavLink className={'icon'} to={'/'}>
+                            <NavLink className={'icon'} to={'https://x.com/'}>
                                 <img src={twitter} alt="twitter" />
                             </NavLink>
-                            <NavLink className={'icon'} to={'/'}>
+                            <NavLink className={'icon'} to={'www.instagram.com/'}>
                                 <img src={instagram} alt="instagram" />
                             </NavLink>
                         </div>

@@ -1,6 +1,6 @@
 const Friends = () => {
 
-    return <div>FRIENDSSSSSSSSs</div>
+    return <div>HEADPHONES</div>
 }
 
 export default Friends;
